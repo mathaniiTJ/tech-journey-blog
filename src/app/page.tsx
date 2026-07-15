@@ -11,7 +11,7 @@ type AllPostsData = {
 }[]
 
 // Change this url to change the image!
-const imageUrl = '/images/snorlax.jpg';
+const imageUrl = 'https://media.wired.com/photos/688260ef4f088f314b8487bc/master/w_1920,c_limit/Paramount-South-Park-Problem-Culture-TCDSOPA_EC204.jpg';
 
 export default function Home() {
   const allPostsData: AllPostsData = getSortedPostsData()
