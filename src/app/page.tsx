@@ -17,9 +17,9 @@ export default function Home() {
   const allPostsData: AllPostsData = getSortedPostsData()
 
   return (
-      <div>
-        <section>
-          <p className={'prose'}>
+      <div className="space-y-6">
+        <section className="rounded-3xl border border-yellow-200 bg-[#fff8d6] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.22)]">
+          <p className={'prose max-w-none text-[#3b2f2f]'}>
             Hey I&apos;m mathani. This is my site.
           </p>
           <div className={'my-4'}>
@@ -36,18 +36,18 @@ export default function Home() {
           </div>
         </section>
 
-        <div className={'my-4'}>
-          <Image className={'rounded'} src={imageUrl} alt={'My Image'} width={500}
-                 height={500}/>
+        <div className={'my-4 overflow-hidden rounded-3xl border border-yellow-200 shadow-[0_12px_35px_rgba(0,0,0,0.28)]'}>
+          <Image className={'w-full object-cover'} src={imageUrl} alt={'My Image'} width={800}
+                 height={320}/>
         </div>
 
-        <section className={'prose'}>
-          <h2>Blog</h2>
+        <section className={'prose max-w-none rounded-3xl border border-yellow-200 bg-[#fffef7] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.22)] text-[#3b2f2f]'}>
+          <h2 className="!text-[#f59e0b]">Blog</h2>
           <ul>
             {allPostsData.map(({id, date, title}) => (
                 <li key={id}>
                   <div>
-                    <Link href={`/posts/${id}`}>{title}</Link>
+                    <Link href={`/posts/${id}`} className="text-[#3b2f2f] hover:text-[#f59e0b]">{title}</Link>
                     <br/>
                     <small>
                       <Date dateString={date}/>

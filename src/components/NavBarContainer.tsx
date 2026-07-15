@@ -30,10 +30,10 @@ const NavBarContainer: React.FC<NavBarContainerProps> = ({title, children, links
       <div className="flex-1 drawer">
         <input id="nav-drawer" type="checkbox" className="drawer-toggle"/>
         <div className="drawer-content flex flex-col items-center pt-[4.25rem]">
-          <div className="w-full navbar glass fixed top-0 z-10 h-18">
+          <div className="w-full navbar fixed top-0 z-10 h-18 border-b border-yellow-200 bg-[#fff8d6] shadow-[0_8px_24px_rgba(0,0,0,0.25)]">
             <div className="flex-none hidden lg:block w-12 h-12">
               <div className="avatar">
-                <div className="w-12 rounded-full border-primary border-2">
+                <div className="w-12 rounded-full border-2 border-[#f59e0b]">
                   <Image alt={'Profile image'} src={profilePic}/>
                 </div>
               </div>
@@ -48,12 +48,10 @@ const NavBarContainer: React.FC<NavBarContainerProps> = ({title, children, links
               </label>
             </div>
             <div className="flex-1 px-2 mx-2 flex justify-between">
-              <Link href="/"><h1 className={'text-4xl font-semibold'}>{title}</h1></Link>
+              <Link href="/"><h1 className={'text-3xl md:text-4xl font-semibold text-[#3b2f2f]'}>{title}</h1></Link>
             </div>
-            {/* uncomment me! */}
-            {/*<DarkModeButton/>*/}
             {links && <div className="flex-none hidden lg:block">
-                <ul className="menu menu-horizontal">
+                <ul className="menu menu-horizontal text-[#3b2f2f]">
                   {renderLinks()}
                 </ul>
             </div>}
@@ -62,7 +60,7 @@ const NavBarContainer: React.FC<NavBarContainerProps> = ({title, children, links
         </div>
         {links && <div className="drawer-side">
             <label htmlFor="nav-drawer" className="drawer-overlay"></label>
-            <ul className="menu p-4 pt-20 w-80 h-full bg-base-200">
+            <ul className="menu p-4 pt-20 w-80 h-full bg-[#fff8d6] text-[#3b2f2f]">
               {renderLinks()}
             </ul>
         </div>}
