@@ -13,8 +13,8 @@ const font = Karla({ weight: '400', subsets: ['latin']})
 const title = 'mathani\'s Site';
 const description = 'This my personal site';
 const links = [
-  {title: 'Pokemon', href: '/pokemon'},
-  {title: 'Rick and Morty', href: '/rick-and-morty'}
+  {title: 'Teen-Wolf', href: '/Teen-Wolf'},
+  {title: 'Total-drama-island', href: '/total-drama-island'}
 ];
 const SocialLinks = {
   twitter: 'https://x.com/dunscombe_luke',
@@ -37,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-      <html lang="en" className={'h-full bg-base-100 text-base-content'} data-theme="dark">
-      <body className={`${font.className} flex min-h-screen flex-col bg-base-100 text-base-content`}>
+      <html lang="en" className={'h-full bg-white text-neutral'} data-theme="light">
+      <body className={`${font.className} flex min-h-screen flex-col bg-white text-neutral`}>
       <NavBarContainer title={title} links={links}>
         <main className={'flex-1 max-w-6xl w-full py-8 md:py-16 px-4 md:px-0'}>{children}</main>
       </NavBarContainer>
