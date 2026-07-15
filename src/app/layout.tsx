@@ -37,10 +37,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-      <html lang="en" className={'h-full'} data-theme="dark">
-      <body className={`${font.className} flex flex-col min-h-screen`}>
+      <html lang="en" className={'h-full bg-base-100 text-base-content'} data-theme="dark">
+      <body className={`${font.className} flex min-h-screen flex-col bg-base-100 text-base-content`}>
       <NavBarContainer title={title} links={links}>
-        <main className={'flex-1 max-w-6xl py-8 md:py-16 px-4 md:px-0'}>{children}</main>
+        <main className={'flex-1 max-w-6xl w-full py-8 md:py-16 px-4 md:px-0'}>{children}</main>
       </NavBarContainer>
       <Footer socialLinks={SocialLinks}/>
       </body>

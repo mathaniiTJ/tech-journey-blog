@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    min-height: 100%;
+    background-color: hsl(var(--b1, 0 0% 10%));
+    color: hsl(var(--bc, 0 0% 98%));
+}
+
+body {
+    margin: 0;
+}
 
 .sprite:hover {
     animation: hop 300ms infinite;
