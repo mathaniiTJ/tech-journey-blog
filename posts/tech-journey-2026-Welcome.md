@@ -10,7 +10,7 @@ What is your name, your favorite pokemon or something you like.
 - Luke (facilatator) - Snorlax
 - Mayank (helper) - Psyduck
 - Sierra (helper) - Cats
-- [Mathani] (tech-journey-blog-roan.vercel.app) - track
+- [Mathani] (https://tech-journey-blog-git-main-chaii.vercel.app/)
 - Ava - Gengar
 - Samuel - Dragonair
 - [Dominic](https://tech-journey-blog-lesbians.vercel.app/) - Espurr
